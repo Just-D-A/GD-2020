@@ -1,24 +1,27 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 
 public class LevelOptionsController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public static int active_level;
 
     public void goBackToMenu() 
     {
-        Application.LoadLevel("Menu");
+        SceneManager.LoadScene("Menu");
+    }
+
+    public void tryAgain() 
+    {    
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+    
+    public void nextLevel(int i) 
+    {    
+        active_level = i;
+        SceneManager.LoadScene("lvl" + i);
     }
 }
