@@ -106,13 +106,12 @@ public class LevelLogicController : MonoBehaviour {
 
     private void winFunc() 
     {
-        /*
-        current_level++;
-        if(current_level == 5) 
+        
+        Globals.LEVEL_COMPLITED++;
+        if( Globals.LEVEL_COMPLITED == 5)
         {
-            max_level++;
+            win_window.SetActive(true);
         }
-        */
         win_window.SetActive(true);
     }
 

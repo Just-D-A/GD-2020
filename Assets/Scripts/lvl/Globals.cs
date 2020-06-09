@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Globals : MonoBehaviour
 {
+    public static int LEVEL_COMPLITED = 0;
     //spots in cow
     public static int EASY_COW_SPOT_X_POSITION_1 = -275 + 540;
     public static int EASY_COW_SPOT_Y_POSITION_1 = 570 + 1170;

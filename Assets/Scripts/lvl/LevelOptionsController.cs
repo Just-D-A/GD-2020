@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 
@@ -11,12 +12,14 @@ public class LevelOptionsController : MonoBehaviour
 
     public void goBackToMenu() 
     {
+        Globals.LEVEL_COMPLITED = 0;
         SceneManager.LoadScene("Menu");
     }
 
-    public void tryAgain() 
+    public void tryAgain(int i) 
     {    
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Globals.LEVEL_COMPLITED = 0;
+        SceneManager.LoadScene("lvl" + i);
     }
     
     public void nextLevel(int i) 

@@ -6,20 +6,23 @@ using UnityEngine.SceneManagement;
 public class ControllerScenceAndMenu : MonoBehaviour
 {
     public GameObject LvLButtons;
+    public GameObject hardLevelButton;
     public GameObject StartButton;
 
     public static bool first_menu =  true;
-    public static int max_level = 1;
+    public int max_level = 1;
     // Start is called before the first frame update
     void Start()
     {
         if(first_menu) {
             StartButton.SetActive (true);
             LvLButtons.SetActive (false);
+            hardLevelButton.SetActive(false);
             first_menu = false;
         } else {
             StartButton.SetActive (false);
             LvLButtons.SetActive (true);
+             hardLevelButton.SetActive(true);
         }
     }
 
@@ -27,7 +30,7 @@ public class ControllerScenceAndMenu : MonoBehaviour
     void Update()
     {
        if(max_level == 2) {
-            StartButton.SetActive (true);
+            hardLevelButton.SetActive (true);
        }
     }
 
