@@ -89,7 +89,7 @@ public class LevelLogicController : MonoBehaviour {
             {
                 targetTime -= Time.deltaTime;  
                 Slider.value = targetTime;
-                Timer.text = Mathf.Round(targetTime).ToString();
+                Timer.text = "TIME: " + Mathf.Round(targetTime).ToString();
             }
         }
         else

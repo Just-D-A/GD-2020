@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 098c047defd1d134a9f4c573bda557aa
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Monkey Phonics (BRK)
+  fontNames:
+  - Monkey Phonics (BRK)
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: c64c2f088ea597d448809a47acde60a5, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
